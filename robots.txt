@@ -1,4 +1,55 @@
+# Official robots.txt for Tommy Sinulingga Law Firm (Advocates & Legal Consultants)
+# Medan Head Office & West Jakarta (Podomoro City) Branch Office
+# Website: https://lawfirm.tommysinulingga.id/
+
 User-agent: *
 Allow: /
 
+# Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# AI Answer Engines, Search Bots & LLM Discovery Crawlers (GEO / AEO)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 Sitemap: https://lawfirm.tommysinulingga.id/sitemap.xml
+# AI & LLM Structured Knowledge Index:
+# https://lawfirm.tommysinulingga.id/llms.txt
+# https://lawfirm.tommysinulingga.id/llms-full.txt

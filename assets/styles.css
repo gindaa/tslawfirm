@@ -144,6 +144,11 @@ dialog {
   padding: 0;
 }
 
+dialog::backdrop {
+  background: rgba(8, 7, 5, 0.82);
+  backdrop-filter: blur(4px);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   @view-transition {
     navigation: auto;
@@ -297,7 +302,10 @@ dialog#lightbox-modal::backdrop {
 .aspect-\[4\/5\] { aspect-ratio: 4 / 5; }
 .aspect-\[799\/337\] { aspect-ratio: 799 / 337; }
 .backdrop-blur-md { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.bg-\[\#060504\] { background-color: #060504; }
+.bg-\[\#070605\] { background-color: #070605; }
 .bg-\[\#12100C\] { background-color: #12100C; }
+.bg-\[\#12100C\]\/95 { background-color: rgba(18, 16, 12, 0.95); }
 .bg-\[\#14110C\] { background-color: #14110C; }
 .bg-\[\#14110C\]\/40 { background-color: rgba(20, 17, 12, 0.4); }
 .bg-\[\#8A6418\] { background-color: #8A6418; }
@@ -313,12 +321,14 @@ dialog#lightbox-modal::backdrop {
 .bg-\[\#FFFDF8\] { background-color: #FFFDF8; }
 .bg-amber-400 { background-color: #fbbf24; }
 .bg-amber-500\/15 { background-color: rgba(245, 158, 11, 0.15); }
+.bg-amber-500\/20 { background-color: rgba(245, 158, 11, 0.2); }
 .bg-black { background-color: #000000; }
 .bg-black\/70 { background-color: rgba(0, 0, 0, 0.7); }
 .bg-black\/80 { background-color: rgba(0, 0, 0, 0.8); }
 .bg-emerald-400 { background-color: #34d399; }
 .bg-emerald-500\/15 { background-color: rgba(16, 185, 129, 0.15); }
 .bg-emerald-950\/30 { background-color: rgba(2, 44, 34, 0.3); }
+.bg-emerald-950\/35 { background-color: rgba(2, 44, 34, 0.35); }
 .bg-emerald-950\/60 { background-color: rgba(2, 44, 34, 0.6); }
 .bg-emerald-950\/80 { background-color: rgba(2, 44, 34, 0.8); }
 .bg-emerald-950\/90 { background-color: rgba(2, 44, 34, 0.9); }
@@ -337,9 +347,13 @@ dialog#lightbox-modal::backdrop {
 .bg-obsidian\/90 { background-color: rgba(18, 16, 12, 0.9); }
 .bg-obsidian\/95 { background-color: rgba(18, 16, 12, 0.95); }
 .bg-stone-900 { background-color: #1c1917; }
+.bg-stone-900\/90 { background-color: rgba(28, 25, 23, 0.9); }
 .bg-stone-950 { background-color: #0c0a09; }
+.bg-stone-950\/80 { background-color: rgba(12, 10, 9, 0.8); }
+.bg-stone-950\/90 { background-color: rgba(12, 10, 9, 0.9); }
 .bg-white { background-color: #ffffff; }
 .bg-white\/70 { background-color: rgba(255, 255, 255, 0.7); }
+.bg-white\/90 { background-color: rgba(255, 255, 255, 0.9); }
 .block { display: block; }
 .border { border-width: 1px; }
 .border-0 { border-width: 0px; }
@@ -353,7 +367,9 @@ dialog#lightbox-modal::backdrop {
 .border-\[\#E6D7B9\] { border-color: #E6D7B9; }
 .border-\[\#EFE5CE\] { border-color: #EFE5CE; }
 .border-amber-400 { border-color: #fbbf24; }
+.border-amber-400\/35 { border-color: rgba(251, 191, 36, 0.35); }
 .border-amber-400\/40 { border-color: rgba(251, 191, 36, 0.4); }
+.border-amber-400\/45 { border-color: rgba(251, 191, 36, 0.45); }
 .border-amber-400\/50 { border-color: rgba(251, 191, 36, 0.5); }
 .border-amber-400\/60 { border-color: rgba(251, 191, 36, 0.6); }
 .border-amber-500\/15 { border-color: rgba(245, 158, 11, 0.15); }
@@ -362,10 +378,13 @@ dialog#lightbox-modal::backdrop {
 .border-amber-500\/30 { border-color: rgba(245, 158, 11, 0.3); }
 .border-amber-500\/35 { border-color: rgba(245, 158, 11, 0.35); }
 .border-amber-500\/40 { border-color: rgba(245, 158, 11, 0.4); }
+.border-amber-500\/45 { border-color: rgba(245, 158, 11, 0.45); }
 .border-b { border-bottom-width: 1px; }
 .border-emerald-500\/25 { border-color: rgba(16, 185, 129, 0.25); }
 .border-emerald-500\/30 { border-color: rgba(16, 185, 129, 0.3); }
 .border-emerald-500\/35 { border-color: rgba(16, 185, 129, 0.35); }
+.border-emerald-500\/40 { border-color: rgba(16, 185, 129, 0.4); }
+.border-emerald-500\/45 { border-color: rgba(16, 185, 129, 0.45); }
 .border-l { border-left-width: 1px; }
 .border-l-4 { border-left-width: 4px; }
 .border-stone-700 { border-color: #44403c; }
@@ -380,6 +399,7 @@ dialog#lightbox-modal::backdrop {
 .decoration-2 { text-decoration-thickness: 2px; }
 .decoration-\[\#C59B27\] { text-decoration-color: #C59B27; }
 .decoration-amber-500\/40 { text-decoration-color: rgba(245, 158, 11, 0.4); }
+.drop-shadow { filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06)); }
 .duration-300 { transition-duration: 300ms; }
 .duration-500 { transition-duration: 500ms; }
 .flex { display: flex; }
@@ -393,6 +413,7 @@ dialog#lightbox-modal::backdrop {
 .font-serif { font-family: var(--font-serif); }
 .from-\[\#0D0C0A\] { --tw-gradient-from: #0D0C0A var(--tw-gradient-from-position); --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
 .from-\[\#1A140E\] { --tw-gradient-from: #1A140E var(--tw-gradient-from-position); --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+.from-\[\#1A1610\] { --tw-gradient-from: #1A1610 var(--tw-gradient-from-position); --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
 .from-\[\#1B1710\] { --tw-gradient-from: #1B1710 var(--tw-gradient-from-position); --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
 .from-\[\#1C1812\] { --tw-gradient-from: #1C1812 var(--tw-gradient-from-position); --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
 .from-\[\#231D14\] { --tw-gradient-from: #231D14 var(--tw-gradient-from-position); --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
@@ -424,6 +445,7 @@ dialog#lightbox-modal::backdrop {
 .h-14 { height: 3.5rem; }
 .h-16 { height: 4rem; }
 .h-2 { height: 0.5rem; }
+.h-20 { height: 5rem; }
 .h-28 { height: 7rem; }
 .h-3\.5 { height: 0.875rem; }
 .h-4 { height: 1rem; }
@@ -452,11 +474,17 @@ dialog#lightbox-modal::backdrop {
 .left-0 { left: 0px; }
 .line-clamp-3 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
 .m-auto { margin: auto; }
+.max-h-\[58vh\] { max-height: 58vh; }
+.max-h-\[68vh\] { max-height: 68vh; }
+.max-h-\[70vh\] { max-height: 70vh; }
 .max-h-\[75vh\] { max-height: 75vh; }
+.max-h-\[78vh\] { max-height: 78vh; }
 .max-h-\[80vh\] { max-height: 80vh; }
+.max-h-\[82vh\] { max-height: 82vh; }
 .max-w-2xl { max-width: 42rem; }
 .max-w-3xl { max-width: 48rem; }
 .max-w-4xl { max-width: 56rem; }
+.max-w-5xl { max-width: 64rem; }
 .max-w-7xl { max-width: 80rem; }
 .max-w-lg { max-width: 32rem; }
 .max-w-md { max-width: 28rem; }
@@ -469,9 +497,12 @@ dialog#lightbox-modal::backdrop {
 .mb-4 { margin-bottom: 1rem; }
 .mb-6 { margin-bottom: 1.5rem; }
 .mb-8 { margin-bottom: 2rem; }
+.min-h-\[260px\] { min-height: 260px; }
 .min-h-\[4\.75rem\] { min-height: 4.75rem; }
+.min-h-\[75vh\] { min-height: 75vh; }
 .min-w-0 { min-width: 0px; }
 .ml-auto { margin-left: auto; }
+.mr-1 { margin-right: 0.25rem; }
 .mt-0\.5 { margin-top: 0.125rem; }
 .mt-1 { margin-top: 0.25rem; }
 .mt-1\.5 { margin-top: 0.375rem; }
@@ -498,6 +529,7 @@ dialog#lightbox-modal::backdrop {
 .opacity-80 { opacity: 0.8; }
 .opacity-\[0\.04\] { opacity: 0.04; }
 .overflow-hidden { overflow: hidden; }
+.overflow-y-auto { overflow-y: auto; }
 .p-0 { padding: 0px; }
 .p-0\.5 { padding: 0.125rem; }
 .p-1 { padding: 0.25rem; }
@@ -515,12 +547,14 @@ dialog#lightbox-modal::backdrop {
 .pb-3 { padding-bottom: 0.75rem; }
 .pb-3\.5 { padding-bottom: 0.875rem; }
 .pb-4 { padding-bottom: 1rem; }
+.pb-5 { padding-bottom: 1.25rem; }
 .pb-6 { padding-bottom: 1.5rem; }
 .pl-3 { padding-left: 0.75rem; }
 .pointer-events-none { pointer-events: none; }
 .pr-2 { padding-right: 0.5rem; }
 .pt-0 { padding-top: 0px; }
 .pt-1 { padding-top: 0.25rem; }
+.pt-1\.5 { padding-top: 0.375rem; }
 .pt-10 { padding-top: 2.5rem; }
 .pt-2 { padding-top: 0.5rem; }
 .pt-2\.5 { padding-top: 0.625rem; }
@@ -529,6 +563,7 @@ dialog#lightbox-modal::backdrop {
 .pt-4 { padding-top: 1rem; }
 .pt-5 { padding-top: 1.25rem; }
 .pt-6 { padding-top: 1.5rem; }
+.px-1 { padding-left: 0.25rem; padding-right: 0.25rem; }
 .px-1\.5 { padding-left: 0.375rem; padding-right: 0.375rem; }
 .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
 .px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
@@ -540,6 +575,7 @@ dialog#lightbox-modal::backdrop {
 .py-0\.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
 .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
 .py-1\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+.py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
 .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
 .py-14 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
 .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
@@ -565,6 +601,7 @@ dialog#lightbox-modal::backdrop {
 .rounded-xl { border-radius: 0.75rem; }
 .scroll-mt-24 { scroll-margin-top: 6rem; }
 .scroll-smooth { scroll-behavior: smooth; }
+.select-none { user-select: none; -webkit-user-select: none; }
 .shadow { box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); }
 .shadow-2xl { box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); }
 .shadow-inner { box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05); }
@@ -631,6 +668,7 @@ dialog#lightbox-modal::backdrop {
 .to-\[\#13100B\] { --tw-gradient-to: #13100B var(--tw-gradient-to-position); }
 .to-\[\#14100B\] { --tw-gradient-to: #14100B var(--tw-gradient-to-position); }
 .to-\[\#16130D\] { --tw-gradient-to: #16130D var(--tw-gradient-to-position); }
+.to-\[\#1A1610\] { --tw-gradient-to: #1A1610 var(--tw-gradient-to-position); }
 .to-\[\#231D14\] { --tw-gradient-to: #231D14 var(--tw-gradient-to-position); }
 .to-\[\#FAF5E8\] { --tw-gradient-to: #FAF5E8 var(--tw-gradient-to-position); }
 .to-black\/65 { --tw-gradient-to: rgba(0, 0, 0, 0.65) var(--tw-gradient-to-position); }
@@ -640,6 +678,7 @@ dialog#lightbox-modal::backdrop {
 .tracking-\[0\.06em\] { letter-spacing: 0.06em; }
 .tracking-\[0\.08em\] { letter-spacing: 0.08em; }
 .tracking-\[0\.12em\] { letter-spacing: 0.12em; }
+.tracking-\[0\.16em\] { letter-spacing: 0.16em; }
 .tracking-\[0\.22em\] { letter-spacing: 0.22em; }
 .tracking-\[0\.25em\] { letter-spacing: 0.25em; }
 .tracking-\[0\.2em\] { letter-spacing: 0.2em; }
@@ -655,6 +694,7 @@ dialog#lightbox-modal::backdrop {
 .underline-offset-4 { text-underline-offset: 4px; }
 .uppercase { text-transform: uppercase; }
 .via-\[\#0D0C0A\]\/60 { --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), rgba(13, 12, 10, 0.6) var(--tw-gradient-via-position), var(--tw-gradient-to); }
+.via-\[\#13100C\] { --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), #13100C var(--tw-gradient-via-position), var(--tw-gradient-to); }
 .via-\[\#18140E\] { --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), #18140E var(--tw-gradient-via-position), var(--tw-gradient-to); }
 .via-\[\#19150E\] { --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), #19150E var(--tw-gradient-via-position), var(--tw-gradient-to); }
 .via-\[\#1B160F\] { --tw-gradient-to: rgba(0,0,0,0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), #1B160F var(--tw-gradient-via-position), var(--tw-gradient-to); }
@@ -675,6 +715,7 @@ dialog#lightbox-modal::backdrop {
 .w-5 { width: 1.25rem; }
 .w-8 { width: 2rem; }
 .w-9 { width: 2.25rem; }
+.w-\[95vw\] { width: 95vw; }
 .w-\[calc\(100\%-2rem\)\] { width: calc(100% - 2rem); }
 .w-auto { width: auto; }
 .w-full { width: 100%; }
@@ -692,21 +733,33 @@ dialog#lightbox-modal::backdrop {
 .focus-visible\:ring-2:focus-visible { box-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color); }
 .focus-visible\:ring-amber-300:focus-visible { --tw-ring-color: #fcd34d; }
 .focus\:border-\[\#8A6418\]:focus { border-color: #8A6418; }
+.focus\:border-amber-300:focus { border-color: #fcd34d; }
+.focus\:border-amber-400:focus { border-color: #fbbf24; }
 .focus\:outline-none:focus { outline: 2px solid transparent; outline-offset: 2px; }
 .focus\:ring-2:focus { box-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color); }
 .focus\:ring-amber-400:focus { --tw-ring-color: #fbbf24; }
 .group:hover .group-hover\:border-amber-400 { border-color: #fbbf24; }
+.group:hover .group-hover\:scale-105 { transform: scale(1.05); }
 .group:hover .group-hover\:scale-110 { transform: scale(1.1); }
 .group:hover .group-hover\:scale-\[1\.02\] { transform: scale(1.02); }
 .group:hover .group-hover\:scale-\[1\.03\] { transform: scale(1.03); }
+.group:hover .group-hover\:text-\[\#8A6418\] { font-size: #8A6418; }
+.group:hover .group-hover\:text-amber-200 { color: #fde68a; }
 .group:hover .group-hover\:text-amber-300 { color: #fcd34d; }
+.group:hover .group-hover\:text-emerald-200 { color: #a7f3d0; }
+.group:hover .group-hover\:translate-x-0\.5 { transform: translateX(0.125rem); }
 .hover\:bg-\[\#DFC99B\]:hover { background-color: #DFC99B; }
 .hover\:bg-\[\#E8DEC8\]:hover { background-color: #E8DEC8; }
 .hover\:bg-\[\#EFE6D2\]:hover { background-color: #EFE6D2; }
 .hover\:bg-\[\#F3E8CC\]:hover { background-color: #F3E8CC; }
 .hover\:bg-\[\#F3ECE0\]:hover { background-color: #F3ECE0; }
+.hover\:bg-\[\#F6EFE0\]:hover { background-color: #F6EFE0; }
 .hover\:bg-\[\#FAF5E8\]:hover { background-color: #FAF5E8; }
+.hover\:bg-amber-500\/10:hover { background-color: rgba(245, 158, 11, 0.1); }
+.hover\:bg-amber-500\/25:hover { background-color: rgba(245, 158, 11, 0.25); }
+.hover\:bg-amber-500\/35:hover { background-color: rgba(245, 158, 11, 0.35); }
 .hover\:bg-stone-800:hover { background-color: #292524; }
+.hover\:bg-stone-800\/90:hover { background-color: rgba(41, 37, 36, 0.9); }
 .hover\:bg-stone-900:hover { background-color: #1c1917; }
 .hover\:border-\[\#8A6418\]:hover { border-color: #8A6418; }
 .hover\:border-\[\#C59B27\]:hover { border-color: #C59B27; }
@@ -714,6 +767,7 @@ dialog#lightbox-modal::backdrop {
 .hover\:border-amber-400:hover { border-color: #fbbf24; }
 .hover\:border-amber-400\/60:hover { border-color: rgba(251, 191, 36, 0.6); }
 .hover\:border-emerald-400:hover { border-color: #34d399; }
+.hover\:brightness-110:hover { filter: brightness(1.1); }
 .hover\:text-\[\#745210\]:hover { font-size: #745210; }
 .hover\:text-\[\#8A6418\]:hover { font-size: #8A6418; }
 .hover\:text-amber-200:hover { color: #fde68a; }
@@ -722,8 +776,12 @@ dialog#lightbox-modal::backdrop {
 .hover\:text-stone-950:hover { color: #0c0a09; }
 .hover\:text-white:hover { color: #ffffff; }
 .hover\:underline:hover { text-decoration-line: underline; }
+.placeholder-stone-400::placeholder { color: #a8a29e; }
+.placeholder-stone-500::placeholder { color: #78716c; }
 .selection\:bg-amber-200 *::selection, .selection\:bg-amber-200::selection { background-color: #fde68a; }
+.selection\:bg-amber-500 *::selection, .selection\:bg-amber-500::selection { background-color: #f59e0b; }
 .selection\:text-stone-900 *::selection, .selection\:text-stone-900::selection { color: #1c1917; }
+.selection\:text-stone-950 *::selection, .selection\:text-stone-950::selection { color: #0c0a09; }
 
 /* ==========================================================================
    6. Responsive Variants (sm: 640px)
@@ -737,6 +795,7 @@ dialog#lightbox-modal::backdrop {
   .sm\:flex-initial { flex: 0 1 auto; }
   .sm\:flex-nowrap { flex-wrap: nowrap; }
   .sm\:flex-row { flex-direction: row; }
+  .sm\:gap-4 { gap: 1rem; }
   .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .sm\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -753,7 +812,9 @@ dialog#lightbox-modal::backdrop {
   .sm\:p-6 { padding: 1.5rem; }
   .sm\:p-7 { padding: 1.75rem; }
   .sm\:p-8 { padding: 2rem; }
+  .sm\:px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
   .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .sm\:py-24 { padding-top: 6rem; padding-bottom: 6rem; }
   .sm\:text-2xl { font-size: 1.5rem; line-height: 2rem; }
   .sm\:text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
   .sm\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
@@ -788,6 +849,8 @@ dialog#lightbox-modal::backdrop {
   .md\:grid-cols-12 { grid-template-columns: repeat(12, minmax(0, 1fr)); }
   .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .md\:inline { display: inline; }
+  .md\:inline-block { display: inline-block; }
   .md\:items-center { align-items: center; }
   .md\:w-full { width: 100%; }
 }
@@ -802,6 +865,7 @@ dialog#lightbox-modal::backdrop {
   .lg\:border-l { border-left-width: 1px; }
   .lg\:border-r { border-right-width: 1px; }
   .lg\:border-t-0 { border-top-width: 0px; }
+  .lg\:col-span-12 { grid-column: span 12 / span 12; }
   .lg\:col-span-2 { grid-column: span 2 / span 2; }
   .lg\:col-span-5 { grid-column: span 5 / span 5; }
   .lg\:col-span-7 { grid-column: span 7 / span 7; }
@@ -816,8 +880,11 @@ dialog#lightbox-modal::backdrop {
   .lg\:hidden { display: none; }
   .lg\:items-center { align-items: center; }
   .lg\:items-end { align-items: flex-end; }
+  .lg\:p-12 { padding: 3rem; }
   .lg\:px-4 { padding-left: 1rem; padding-right: 1rem; }
   .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+  .lg\:py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+  .lg\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
   .lg\:py-20 { padding-top: 5rem; padding-bottom: 5rem; }
   .lg\:py-24 { padding-top: 6rem; padding-bottom: 6rem; }
   .lg\:sticky { position: sticky; }
@@ -834,12 +901,15 @@ dialog#lightbox-modal::backdrop {
    ========================================================================== */
 @media (min-width: 1280px) {
 
+  .xl\:flex { display: flex; }
   .xl\:gap-2 { gap: 0.5rem; }
   .xl\:gap-3 { gap: 0.75rem; }
   .xl\:gap-3\.5 { gap: 0.875rem; }
   .xl\:gap-4 { gap: 1rem; }
   .xl\:h-11 { height: 2.75rem; }
+  .xl\:inline-block { display: inline-block; }
   .xl\:p-5 { padding: 1.25rem; }
+  .xl\:px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
   .xl\:px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
   .xl\:px-3\.5 { padding-left: 0.875rem; padding-right: 0.875rem; }
   .xl\:px-8 { padding-left: 2rem; padding-right: 2rem; }
@@ -902,6 +972,16 @@ dialog#lightbox-modal::backdrop {
   video,
   button:not(.print-preserve) {
     display: none !important;
+  }
+
+  /* Ensure both Non-Litigation (10) and Litigation (6) practice tracks are visible in printed Executive Brief */
+  #srv-block-non-litigation,
+  #srv-block-litigation,
+  #srv-block-non-litigation[hidden],
+  #srv-block-litigation[hidden],
+  #srv-block-non-litigation.hidden,
+  #srv-block-litigation.hidden {
+    display: block !important;
   }
 
   /* Neutralize dark backgrounds and decorative gradients */
